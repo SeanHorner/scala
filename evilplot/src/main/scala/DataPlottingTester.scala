@@ -12,28 +12,23 @@ object DataPlottingTester extends App {
     fonts = DefaultFonts
       .copy(tickLabelSize = 14, legendLabelSize = 14, fontFace = "'Lato', sans-serif")
   )
-  def plotBar(title: String, fname: String, path: String): Unit = {
+  def plotBar(title: String, fname: String, path: String, in_path: String): Unit = {
+
     var yAxis = Seq[Double]()
     var labels = Seq[String]()
 
-    // Populate x-axis and y-axis
-    for (i <- seq.indices) {
-      if (i % 2 == 0) {
-        labels = labels :+ seq(i).toInt.toString
-      }
-    }
-    for (i <- seq.indices) {
-      if (i % 2 != 0) {
-        yAxis = yAxis :+ seq(i)
-      }
-    }
+    val bufferedSource = Source.fromFile(in_path)
+    val points = bufferedSource.getLines.drop(1).map { line =>
+      val columns = line.split(",").map{_.trim()}
+      labels += seq(s"${columns.head.toInt}.${columns(1).toInt}")
+      yAxis += seq(columns(2).toDouble)
 
     val customRenderer: BarRenderer = new BarRenderer {
       def render(plot: Plot, extent: Extent, category: Bar): Drawable = {
         val rect = Rect(extent)
         val value = category.values.head
         val color = RGB(0, 102, 255)
-        Align.center(rect filled color, Text(s"testTest$value", size = 20)
+        Align.center(rect filled color, Text(s"$value", size = 20)
           .filled(theme.colors.label)
         ).group
       }
@@ -42,21 +37,12 @@ object DataPlottingTester extends App {
     BarChart
       .custom(yAxis.map(Bar.apply), spacing = Some(20), barRenderer = Some(customRenderer))
       .standard(xLabels = labels)
+      .title(title)
       .hline(0)
       .render()
       .write(new File(s"output/$path/$fname.png"))
   }
 
-  val spark: SparkSession = SparkSession.builder()
-    .appName("Meetup Trends Analysis Engine")
-    .master("local[4]")
-    .getOrCreate()
-
-  spark.sparkContext.setLogLevel("ERROR")
-
-
-  val df = spark.read.csv("output/question_07/by_count.csv")
-
-  plotBar(df, "Ranked Event Duration in Minutes", "by_count", "question_07")
+  plotBar("input_data/question_01/results.csv", "Event Count Over Time", "results", "question_01")
 
 }

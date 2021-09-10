@@ -1,0 +1,143 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\Sean\AppData\Local\Temp\idea.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\Sean\AppData\Local\Temp\idea.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.5.5 (Oracle Corporation Java 15)
+[debug]       Load.loadUnit: plugins took 82.9028ms
+[debug]       Load.loadUnit: defsScala took 0.3412ms
+[debug] [Loading] Scanning directory C:\Users\Sean\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Sean\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 15.1607 ms
+[debug]           Load.resolveProject(global-plugins) took 38.0952ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\Sean\.sbt\1.0\plugins, plugins: List(<none>))) took 69.2078ms
+[debug] [Loading] Done in C:\Users\Sean\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 86.3186ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.2027ms
+[debug]     Load.loadUnit(file:/C:/Users/Sean/.sbt/1.0/plugins/, ...) took 178.7067ms
+[debug]   Load.apply: load took 351.3507ms
+[debug]   Load.apply: resolveProjects took 5.208ms
+[debug]   Load.apply: finalTransforms took 66.384ms
+[debug]   Load.apply: config.delegates took 6.9404ms
+[debug]   Load.apply: Def.make(settings)... took 272.3682ms
+[debug]   Load.apply: structureIndex took 81.9749ms
+[debug]   Load.apply: mkStreams took 1.2687ms
+[info] loading global plugins from C:\Users\Sean\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 3658.7251ms
+[debug]           Load.loadUnit: plugins took 20.7827ms
+[debug]           Load.loadUnit: defsScala took 0.002ms
+[debug] [Loading] Scanning directory D:\programming_projects\github\scala\evilplot\project
+[debug]             Load.loadUnit: mkEval took 3.9863ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in D:\programming_projects\github\scala\evilplot\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.7473 ms
+[info] loading settings for project evilplot-build from idea.sbt ...
+[debug]               Load.resolveProject(evilplot-build) took 10.1585ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id evilplot-build, base: D:\programming_projects\github\scala\evilplot\project, plugins: List(<none>))) took 12.5065ms
+[debug] [Loading] Done in D:\programming_projects\github\scala\evilplot\project, returning: (evilplot-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 1758.2221ms
+[debug]           Load.loadUnit: cleanEvalClasses took 4.9673ms
+[debug]         Load.loadUnit(file:/D:/programming_projects/github/scala/evilplot/project/, ...) took 1784.7315ms
+[debug]       Load.apply: load took 1785.9282ms
+[debug]       Load.apply: resolveProjects took 0.0916ms
+[debug]       Load.apply: finalTransforms took 7.9202ms
+[debug]       Load.apply: config.delegates took 0.2662ms
+[debug]       Load.apply: Def.make(settings)... took 56.6339ms
+[debug]       Load.apply: structureIndex took 32.1617ms
+[debug]       Load.apply: mkStreams took 0.0016ms
+[info] loading project definition from D:\programming_projects\github\scala\evilplot\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[debug]     Load.loadUnit: plugins took 2304.1788ms
+[debug]     Load.loadUnit: defsScala took 0.003ms
+[debug] [Loading] Scanning directory D:\programming_projects\github\scala\evilplot
+[debug]       Load.loadUnit: mkEval took 0.2293ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in D:\programming_projects\github\scala\evilplot, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin)))
+[debug] Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 2.0543 ms
+[info] loading settings for project evilplot from build.sbt ...
+[debug]         Load.resolveProject(evilplot) took 22.704ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id evilplot, base: D:\programming_projects\github\scala\evilplot, plugins: List(<none>))) took 25.6828ms
+[debug] [Loading] Done in D:\programming_projects\github\scala\evilplot, returning: (evilplot)
+[debug]     Load.loadUnit: loadedProjectsRaw took 1083.4008ms
+[debug]     Load.loadUnit: cleanEvalClasses took 11.3962ms
+[debug]   Load.loadUnit(file:/D:/programming_projects/github/scala/evilplot/, ...) took 3399.6336ms
+[debug] Load.apply: load took 3400.7672ms
+[debug] Load.apply: resolveProjects took 0.092ms
+[debug] Load.apply: finalTransforms took 41.7044ms
+[debug] Load.apply: config.delegates took 0.2273ms
+[debug] Load.apply: Def.make(settings)... took 65.5292ms
+[debug] Load.apply: structureIndex took 21.2078ms
+[debug] Load.apply: mkStreams took 0.0025ms
+[info] set current project to evilplot (in build file:/D:/programming_projects/github/scala/evilplot/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(; set ideaPort in Global := 63283 ; idea-shell, None, None)
+[debug] > Exec(set ideaPort in Global := 63283, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to evilplot (in build file:/D:/programming_projects/github/scala/evilplot/)
+[debug] > Exec(idea-shell, None, None)
