@@ -273,7 +273,7 @@ object number_guess_game extends App {
       case 1 =>
         print("* Wrong! The computer shuts down with a loud siren. You've tripped the      *\n"
             + "* alarm. Rick turns his head to chastise you for your idiocy when suddenly  *\n"
-            + "* the tip of a Gazorpazorpian spear bursts forth from Rick's chest,       *\n"
+            + "* the tip of a Gazorpazorpian spear bursts forth from Rick's chest,         *\n"
             + "* wielded by another warrior entering the room.                             *\n\n")
       case 2 =>
         print("* Failure! Through a screaming siren, the console declares:                 *\n\n"
