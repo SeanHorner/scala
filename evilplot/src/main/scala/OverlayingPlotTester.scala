@@ -1,15 +1,21 @@
 import com.cibo.evilplot.numeric.Point
 import com.cibo.evilplot.colors._
 import com.cibo.evilplot.plot._
+import com.cibo.evilplot.plot.aesthetics.DefaultTheme.{DefaultFonts, DefaultTheme}
+import com.cibo.evilplot.plot.aesthetics.Theme
 import com.cibo.evilplot.plot.renderers._
 
 import scala.collection.mutable.ArrayBuffer
 import scala.io.Source
-
 import java.io.File
 
 object OverlayingPlotTester extends App {
   new File("output/OverlayingPlotTest/").mkdirs()
+
+  implicit val theme: Theme = DefaultTheme.copy(
+    fonts = DefaultFonts
+      .copy(tickLabelSize = 14, legendLabelSize = 14, fontFace = "'Lato', sans-serif")
+  )
 
   val path: String = "input_data/"
   val data: Seq[Point] = {
